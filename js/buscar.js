@@ -8,6 +8,7 @@ async function buscar(){
     const cards = document.getElementById("cards_games");
 
     cards.innerHTML = respostaDadosAgenda.map((itemAgenda) => {
+        var dataAgenda = new Date(itemAgenda)
     return `
         <div class="cardItem">
                 <div class="dataGame"> 
